@@ -1,4 +1,4 @@
-# ProbePioneer
+# Simple Search Engine
 A local file search engine.
 
 This project is a local search engine written in C++. It is designed to scan and index files on your computer for subsequent searching and extraction of information from them.
