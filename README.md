@@ -82,15 +82,22 @@ Each class encapsulates specific functionalities and is implemented across its r
     ```shell
     git clone https://github.com/justVladislav/ProbePioneer.git
     ```
-
-2. Make sure you have a C++ compiler and the nlohmann::json library installed.
-
-3. Build the project using your compiler.
+2. Build the project using your compiler.
 
 ## Usage
+The interface is quite simple, and you can find all the information in the description.
+The main functions are launched at specific times in separate threads, which are set in config.json. Additionally, through the interface, you can manually execute necessary functions, such as adding queries or updating the document database.
 
-1. Run the program.
-
-2. Index the folders and files you want to include in the search.
-
-3. Conduct searches for keywords or phrases to extract information from files.
+##Project Structure
+- .idea: Configuration files related to the IDE setup.
+- answers.json: JSON file containing answers data.
+- cmake-build-debug: Directory for CMake build in debug mode.
+- cmake-build-debug-coverage: Directory for CMake build with coverage data.
+- CMakeLists.txt: CMake configuration file for the project.
+- config.json: JSON file containing configuration settings.
+- googleTest: Directory for Google Test framework.
+- includes: Directory containing project header files.
+- nlohmann_json: Directory for the nlohmann JSON library.
+- requests.json: JSON file containing request data.
+- resources: Directory for project resources.
+- sourceFiles: Directory containing source code files.
