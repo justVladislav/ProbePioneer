@@ -56,7 +56,7 @@ The `SearchServer` class manages search functionalities and calculations for que
 The `SearchServer` class orchestrates the search functionality of the system. It performs operations such as splitting queries, calculating word relevance, organizing search results based on relevancy, and presenting the final search outcomes.
 
 ProgramInterface - programInterface.h and programInterface.cpp
-ProgramInterface Class functionalities:
+## ProgramInterface Class functionalities:
 The `ProgramInterface` class serves as an interface for managing various operations within the program. The interface is initialized through `main.cpp` with the inclusion of `#include "programInterface.h"`.
 ### Constructor
 - **ProgramInterface():** Initializes various components necessary for the program's functionality, such as:
