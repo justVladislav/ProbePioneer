@@ -88,7 +88,7 @@ Each class encapsulates specific functionalities and is implemented across its r
 The interface is quite simple, and you can find all the information in the description.
 The main functions are launched at specific times in separate threads, which are set in config.json. Additionally, through the interface, you can manually execute necessary functions, such as adding queries or updating the document database.
 
-##Project Structure
+## Project Structure
 - .idea: Configuration files related to the IDE setup.
 - answers.json: JSON file containing answers data.
 - cmake-build-debug: Directory for CMake build in debug mode.
@@ -101,3 +101,6 @@ The main functions are launched at specific times in separate threads, which are
 - requests.json: JSON file containing request data.
 - resources: Directory for project resources.
 - sourceFiles: Directory containing source code files.
+
+  ## Contacts/Support
+  You can find my email in the Description of my profile. I'm currently exploring the capabilities of C++ and I'm open to feedback and suggestions from experts to enhance my coding skills. I appreciate any comments or guidance on improving my code and overall proficiency in C++.
