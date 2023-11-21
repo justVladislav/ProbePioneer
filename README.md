@@ -1,2 +1,2 @@
 # ProbePioneer
-A local file search engineю
+A local file search engine.
