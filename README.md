@@ -87,6 +87,7 @@ Each class encapsulates specific functionalities and is implemented across its r
 ## Usage
 The interface is quite simple, and you can find all the information in the description.
 The main functions are launched at specific times in separate threads, which are set in config.json. Additionally, through the interface, you can manually execute necessary functions, such as adding queries or updating the document database.
+When the program is launched, it displays the project name and notifies about performing core functions, such as retrieving documents from files, updating the database, and more. As mentioned earlier, the interface is quite simple and easy to understand.
 
 ## Project Structure
 - .idea: Configuration files related to the IDE setup.
