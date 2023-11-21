@@ -80,7 +80,7 @@ Each class encapsulates specific functionalities and is implemented across its r
 
 1. Clone the repository:
     ```shell
-    git clone [https://github.com/your_username/your_repository.git](https://github.com/justVladislav/ProbePioneer.git)
+    git clone https://github.com/justVladislav/ProbePioneer.git
     ```
 
 2. Make sure you have a C++ compiler and the nlohmann::json library installed.
