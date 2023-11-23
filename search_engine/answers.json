@@ -1,0 +1,130 @@
+{
+    "answers": {
+        "request001": {
+            "relevance": [
+                {
+                    "docId": 0,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 1,
+                    "rank": 0.5714285714285714
+                },
+                {
+                    "docId": 2,
+                    "rank": 0.14285714285714285
+                },
+                {
+                    "docId": 3,
+                    "rank": 0.14285714285714285
+                },
+                {
+                    "docId": 4,
+                    "rank": 0.14285714285714285
+                }
+            ],
+            "result": "true"
+        },
+        "request002": {
+            "relevance": [
+                {
+                    "docId": 1,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 0,
+                    "rank": 0.125
+                },
+                {
+                    "docId": 2,
+                    "rank": 0.125
+                },
+                {
+                    "docId": 3,
+                    "rank": 0.125
+                },
+                {
+                    "docId": 5,
+                    "rank": 0.125
+                }
+            ],
+            "result": "true"
+        },
+        "request003": {
+            "relevance": [
+                {
+                    "docId": 2,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 0,
+                    "rank": 0.031914893617021274
+                },
+                {
+                    "docId": 7,
+                    "rank": 0.010638297872340425
+                },
+                {
+                    "docId": 9,
+                    "rank": 0.010638297872340425
+                }
+            ],
+            "result": "true"
+        },
+        "request004": {
+            "result": "false"
+        },
+        "request005": {
+            "relevance": [
+                {
+                    "docId": 4,
+                    "rank": 1.0
+                }
+            ],
+            "result": "true"
+        },
+        "request006": {
+            "relevance": [
+                {
+                    "docId": 7,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 8,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 9,
+                    "rank": 1.0
+                }
+            ],
+            "result": "true"
+        },
+        "request007": {
+            "relevance": [
+                {
+                    "docId": 8,
+                    "rank": 1.0
+                }
+            ],
+            "result": "true"
+        },
+        "request008": {
+            "relevance": [
+                {
+                    "docId": 7,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 8,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 9,
+                    "rank": 1.0
+                }
+            ],
+            "result": "true"
+        }
+    }
+}
