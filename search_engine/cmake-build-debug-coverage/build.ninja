@@ -172,66 +172,6 @@ build sourceFiles/SkillBoxSearchEngine.exe: CXX_EXECUTABLE_LINKER__SkillBoxSearc
   TARGET_IMPLIB = sourceFiles\libSkillBoxSearchEngine.dll.a
   TARGET_PDB = SkillBoxSearchEngine.exe.dbg
 
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target SearchEngineLibrary
-
-
-#############################################
-# Order-only phony target for SearchEngineLibrary
-
-build cmake_object_order_depends_target_SearchEngineLibrary: phony || sourceFiles/CMakeFiles/SearchEngineLibrary.dir
-
-build sourceFiles/CMakeFiles/SearchEngineLibrary.dir/converterJson.cpp.obj: CXX_COMPILER__SearchEngineLibrary_unscanned_Debug C$:/Users/vlad_/CLionProjects/search_engine/sourceFiles/converterJson.cpp || cmake_object_order_depends_target_SearchEngineLibrary
-  DEP_FILE = sourceFiles\CMakeFiles\SearchEngineLibrary.dir\converterJson.cpp.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/vlad_/CLionProjects/search_engine/sourceFiles/../includes -IC:/Users/vlad_/CLionProjects/search_engine/includes -IC:/Users/vlad_/CLionProjects/search_engine/nlohmann_json/include
-  OBJECT_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-  OBJECT_FILE_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-
-build sourceFiles/CMakeFiles/SearchEngineLibrary.dir/invertedIndex.cpp.obj: CXX_COMPILER__SearchEngineLibrary_unscanned_Debug C$:/Users/vlad_/CLionProjects/search_engine/sourceFiles/invertedIndex.cpp || cmake_object_order_depends_target_SearchEngineLibrary
-  DEP_FILE = sourceFiles\CMakeFiles\SearchEngineLibrary.dir\invertedIndex.cpp.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/vlad_/CLionProjects/search_engine/sourceFiles/../includes -IC:/Users/vlad_/CLionProjects/search_engine/includes -IC:/Users/vlad_/CLionProjects/search_engine/nlohmann_json/include
-  OBJECT_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-  OBJECT_FILE_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-
-build sourceFiles/CMakeFiles/SearchEngineLibrary.dir/relativeIndex.cpp.obj: CXX_COMPILER__SearchEngineLibrary_unscanned_Debug C$:/Users/vlad_/CLionProjects/search_engine/sourceFiles/relativeIndex.cpp || cmake_object_order_depends_target_SearchEngineLibrary
-  DEP_FILE = sourceFiles\CMakeFiles\SearchEngineLibrary.dir\relativeIndex.cpp.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/vlad_/CLionProjects/search_engine/sourceFiles/../includes -IC:/Users/vlad_/CLionProjects/search_engine/includes -IC:/Users/vlad_/CLionProjects/search_engine/nlohmann_json/include
-  OBJECT_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-  OBJECT_FILE_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-
-build sourceFiles/CMakeFiles/SearchEngineLibrary.dir/programInterface.cpp.obj: CXX_COMPILER__SearchEngineLibrary_unscanned_Debug C$:/Users/vlad_/CLionProjects/search_engine/sourceFiles/programInterface.cpp || cmake_object_order_depends_target_SearchEngineLibrary
-  DEP_FILE = sourceFiles\CMakeFiles\SearchEngineLibrary.dir\programInterface.cpp.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/vlad_/CLionProjects/search_engine/sourceFiles/../includes -IC:/Users/vlad_/CLionProjects/search_engine/includes -IC:/Users/vlad_/CLionProjects/search_engine/nlohmann_json/include
-  OBJECT_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-  OBJECT_FILE_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-
-build sourceFiles/CMakeFiles/SearchEngineLibrary.dir/main.cpp.obj: CXX_COMPILER__SearchEngineLibrary_unscanned_Debug C$:/Users/vlad_/CLionProjects/search_engine/sourceFiles/main.cpp || cmake_object_order_depends_target_SearchEngineLibrary
-  DEP_FILE = sourceFiles\CMakeFiles\SearchEngineLibrary.dir\main.cpp.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/vlad_/CLionProjects/search_engine/sourceFiles/../includes -IC:/Users/vlad_/CLionProjects/search_engine/includes -IC:/Users/vlad_/CLionProjects/search_engine/nlohmann_json/include
-  OBJECT_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-  OBJECT_FILE_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target SearchEngineLibrary
-
-
-#############################################
-# Link the static library sourceFiles\libSearchEngineLibrary.a
-
-build sourceFiles/libSearchEngineLibrary.a: CXX_STATIC_LIBRARY_LINKER__SearchEngineLibrary_Debug sourceFiles/CMakeFiles/SearchEngineLibrary.dir/converterJson.cpp.obj sourceFiles/CMakeFiles/SearchEngineLibrary.dir/invertedIndex.cpp.obj sourceFiles/CMakeFiles/SearchEngineLibrary.dir/relativeIndex.cpp.obj sourceFiles/CMakeFiles/SearchEngineLibrary.dir/programInterface.cpp.obj sourceFiles/CMakeFiles/SearchEngineLibrary.dir/main.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = --coverage -g
-  OBJECT_DIR = sourceFiles\CMakeFiles\SearchEngineLibrary.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = sourceFiles\libSearchEngineLibrary.a
-  TARGET_PDB = SearchEngineLibrary.a.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -845,8 +785,6 @@ build GoogleTest: phony googleTest/GoogleTest.exe
 
 build GoogleTest.exe: phony googleTest/GoogleTest.exe
 
-build SearchEngineLibrary: phony sourceFiles/libSearchEngineLibrary.a
-
 build SkillBoxSearchEngine: phony sourceFiles/SkillBoxSearchEngine.exe
 
 build SkillBoxSearchEngine.exe: phony sourceFiles/SkillBoxSearchEngine.exe
@@ -858,8 +796,6 @@ build gmock_main: phony lib/libgmock_maind.a
 build gtest: phony lib/libgtestd.a
 
 build gtest_main: phony lib/libgtest_maind.a
-
-build libSearchEngineLibrary.a: phony sourceFiles/libSearchEngineLibrary.a
 
 build libgmock_maind.a: phony lib/libgmock_maind.a
 
@@ -919,7 +855,7 @@ build nlohmann_json/all: phony
 #############################################
 # Folder: C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles
 
-build sourceFiles/all: phony sourceFiles/SkillBoxSearchEngine.exe sourceFiles/libSearchEngineLibrary.a
+build sourceFiles/all: phony sourceFiles/SkillBoxSearchEngine.exe
 
 # =============================================================================
 # Built-in targets

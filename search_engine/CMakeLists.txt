@@ -13,4 +13,3 @@ add_subdirectory(nlohmann_json)
 target_link_libraries(SkillBoxSearchEngine PRIVATE nlohmann_json::nlohmann_json)
 
 
-

@@ -5,7 +5,6 @@ C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/CMakeFiles
 C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/CMakeFiles/install/local.dir
 C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/CMakeFiles/install/strip.dir
 C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles/CMakeFiles/SkillBoxSearchEngine.dir
-C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles/CMakeFiles/SearchEngineLibrary.dir
 C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles/CMakeFiles/edit_cache.dir
 C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles/CMakeFiles/rebuild_cache.dir
 C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles/CMakeFiles/list_install_components.dir
