@@ -1,6 +1,6 @@
 "C:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.1.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\vlad_\CLionProjects\search_engine -B C:\Users\vlad_\CLionProjects\search_engine\cmake-build-debug
 -- Could NOT find Python (missing: Python_EXECUTABLE Interpreter) 
 -- Using the multi-header code from C:/Users/vlad_/CLionProjects/search_engine/nlohmann_json/include/
--- Configuring done (6.3s)
+-- Configuring done (6.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug

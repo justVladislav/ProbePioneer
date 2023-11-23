@@ -63,6 +63,10 @@
                 {
                     "docId": 7,
                     "rank": 0.010638297872340425
+                },
+                {
+                    "docId": 9,
+                    "rank": 0.010638297872340425
                 }
             ],
             "result": "true"
@@ -87,7 +91,11 @@
                 },
                 {
                     "docId": 8,
-                    "rank": 0.5
+                    "rank": 1.0
+                },
+                {
+                    "docId": 9,
+                    "rank": 1.0
                 }
             ],
             "result": "true"
@@ -96,6 +104,23 @@
             "relevance": [
                 {
                     "docId": 8,
+                    "rank": 1.0
+                }
+            ],
+            "result": "true"
+        },
+        "request008": {
+            "relevance": [
+                {
+                    "docId": 7,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 8,
+                    "rank": 1.0
+                },
+                {
+                    "docId": 9,
                     "rank": 1.0
                 }
             ],
