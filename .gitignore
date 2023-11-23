@@ -45,7 +45,7 @@ $RECYCLE.BIN/
 *.lai
 *.la
 *.a
-*.lib
+
 # Executables
 *.exe
 *.out
