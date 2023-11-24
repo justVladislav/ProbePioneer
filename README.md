@@ -92,11 +92,14 @@ Set your project's working directory.
 ![screenshot2.](images_Readme.md/Screenshot_2.png)
 
 ## Usage
-The interface is quite simple, and you can find all the information in the description.
+To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
 The main functions are launched at specific times in separate threads, which are set in config.json. Additionally, through the interface, you can manually execute necessary functions, such as adding queries or updating the document database.
 When the program is launched, it displays the project name and notifies about performing core functions, such as retrieving documents from files, updating the database, and more. As mentioned earlier, the interface is quite simple and easy to understand.
+![screenshot5.](images_Readme.md/Screenshot_5.png)
+![screenshot6.](images_Readme.md/Screenshot_6.png)
+
 ### Google Test
-To run Google testing, simply choose the Google Test run/debug configuration and execute. Before running the tests, please read the comments in invertedIndex.cpp within the method void InvertedIndex::updateDocumentBase, and in relativeIndex.cpp within the method std::vector<std::vector<RelativeIndex>>SearchServer::search. Also, pay attention to the comments in the checking classes within the googleTest folder. The test results are provided below:
+To run Google testing, simply choose the Google Test in run/debug configuration and execute. Before running the tests, please read the comments in invertedIndex.cpp within the method void InvertedIndex::updateDocumentBase, and in relativeIndex.cpp within the method std::vector<std::vector<RelativeIndex>>SearchServer::search. Also, pay attention to the comments in the checking classes within the googleTest folder. The test results are provided below:
 ![screenshot3.](images_Readme.md/Screenshot_3.png)
 ![screenshot4.](images_Readme.md/Screenshot_4.png)
 
