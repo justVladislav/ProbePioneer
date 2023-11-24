@@ -89,7 +89,7 @@ In case you work on CLion, select the Option "Open Local folder" and choose sear
 In the top right corner, select the run/debug configuration (for instance, next to the run button). Choose "Edit Configurations..." to open the run configuration window.
 In the opened window, select the run configuration (e.g., "Application"). Find the "Working directory" field.
 Set your project's working directory. 
-
+![screenshot2.](images_Readme.md/Screenshot_2.png)
 
 ## Usage
 The interface is quite simple, and you can find all the information in the description.
