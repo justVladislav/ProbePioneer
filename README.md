@@ -83,7 +83,7 @@ Each class encapsulates specific functionalities and is implemented across its r
     git clone https://github.com/justVladislav/ProbePioneer.git
     ```
 2. To build the project using your compiler (Visual Studio or IDE CLion), download the Project folder search_engine on your computer. If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp #include <filesystem>. And in the main function std::filesystem::current_path("the path on your PC to the project search_engine Folder"). See the screen below.
-![screenshot1.]("C:\Users\vlad_\Desktop\Screenshot_1.png")    
+![screenshot1.](C:/Users/vlad_/Desktop/Screenshot_1.png)    
 
 ## Usage
 The interface is quite simple, and you can find all the information in the description.
