@@ -3,8 +3,6 @@
 
 using namespace  std;
 //Tests passed successfully!
-//In case of testing, parameters should be added to the method of the tested class,
-// updateDocumentBase(), according to the testing class.
 TEST(TestCaseSearchServer, TestSimple) {
     const vector<string> docs = {
             "milk milk milk milk water water water",
