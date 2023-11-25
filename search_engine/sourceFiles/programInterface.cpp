@@ -14,7 +14,7 @@ std::atomic<bool> terminate_threads(false);
 void ProgramInterface::runUpdateDocsThread() {
 
     while (!terminate_threads) {
-        invIndex->updateDocumentBase();
+        invIndex->updateDocumentBase(converter->getTextDocuments());
         int time = converter->getUpdateTime();
         std::this_thread::sleep_for(std::chrono::minutes (time));
     }
@@ -62,7 +62,7 @@ void ProgramInterface::programFace( std::thread& t1,  std::thread& t2) {
             }
 
         } else if (command == "update") {
-            invIndex->updateDocumentBase();
+            invIndex->updateDocumentBase(converter->getTextDocuments());
 
         } else if (command == "put") {
             std::unique_lock<std::mutex> lock(results_mutex);

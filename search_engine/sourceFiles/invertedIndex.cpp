@@ -66,16 +66,11 @@ void InvertedIndex::processDocument(const size_t& docId)
 
 }
 
-void InvertedIndex::updateDocumentBase()
+void InvertedIndex::updateDocumentBase(const std::vector<std::string>& inputDocs)
 {
-    //In case of testing, it is necessary to pass all the parameter values of the method as the variable 'docs',
-    // instead of calling the method converter.getTextDocuments();
-    //void InvertedIndex::updateDocumentBase(std::vector<std::string> inputDocs)
-    //      docs = inputDocs;
-    ConverterJSON converter;
-    docs = converter.getTextDocuments();
+    
     std::vector<std::thread> threads;
-
+    docs = intpuDocs;
     for (size_t i = 0; i < docs.size(); ++i)
     {
         threads.emplace_back(&InvertedIndex::processDocument, this, i);

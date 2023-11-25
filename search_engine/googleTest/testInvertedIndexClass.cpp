@@ -14,8 +14,7 @@ void TestInvertedIndexFunctionality(
 {
 std::vector<std::vector<Entry>> result;
 InvertedIndex idx;
-idx.updateDocumentBase(/**docs*/); // Here, it is necessary to put 'docs' as the parameter
-//please see the remarks in invertedIndex.h
+idx.updateDocumentBase(docs); 
 for(auto& request : requests) {
 std::vector<Entry> word_count = idx.getWordCount(request);
 result.push_back(word_count);

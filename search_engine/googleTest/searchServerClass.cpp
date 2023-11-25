@@ -23,8 +23,7 @@ TEST(TestCaseSearchServer, TestSimple) {
             }
     };
     InvertedIndex idx;
-    idx.updateDocumentBase(/**docs*/); //please see the remarks in invertedIndex.h
-    // Here, it is necessary to put 'docs' as the parameter
+    idx.updateDocumentBase(docs);
 
     SearchServer srv(idx);
     std::vector<vector<RelativeIndex>> result = srv.search(request);
@@ -86,8 +85,7 @@ TEST(TestCaseSearchServer, TestTop5) {
             }
     };
     InvertedIndex idx;
-    idx.updateDocumentBase(/**docs*/); //please see the remarks in invertedIndex.h
-    // Here, it is necessary to put 'docs' as the parameter
+    idx.updateDocumentBase(docs); 
 
     SearchServer srv(idx);
     std::vector<vector<RelativeIndex>> result = srv.search(request);

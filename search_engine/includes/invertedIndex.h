@@ -24,9 +24,7 @@ public:
 /**
 * Update or populate the document database for searching, processing each file separately in threads
 */
-    void updateDocumentBase(); //In case of testing necessary to add parameter according to the Testing Class
-    // example - void updateDocumentBase(std::vector<std::string>& inputDocs)
-
+    void updateDocumentBase(const std::vector<std::string>& inputDocs); 
 /**
 * The method determines the number of occurrences of the word in the loaded document database
 * @param word the word to determine the frequency of occurrences

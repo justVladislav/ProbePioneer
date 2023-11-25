@@ -45,10 +45,10 @@ std::vector<std::string> ConverterJSON::getTextDocuments()
         throw JsonFileException("WRONG APPLICATION VERSION!");
     }
 
-        // Получаем список файлов из config.json
+        
     for (const auto& file : configJson["files"])
     {
-        // Открываем файл для чтения
+        
         std::ifstream input(file);
         if (input.is_open()) {
 
@@ -135,7 +135,7 @@ std::vector<std::vector<std::pair<size_t, double>>> ConverterJSON::convertToPair
         std::vector<std::pair<size_t, double>> convertedVector;
 
         for (const auto& relIndex : innerVector) {
-            // Преобразование каждого элемента RelativeIndex в std::pair
+            
             convertedVector.emplace_back(relIndex.docId, relIndex.rank);
         }
 
@@ -274,7 +274,7 @@ void ConverterJSON::addFileToConfig(const std::string& filePath)
 
     configJson["files"].push_back(filePath);
 
-    // Запись обновленных данных обратно в файл config.json
+    
     std::ofstream outFileStream("config.json");
     if (!outFileStream.is_open()) {
         throw JsonFileException("COULDN'T OPEN CONFIG FILE FOR WRITING!");
@@ -297,7 +297,7 @@ void ConverterJSON::addRequest(const std::string& request)
 
     configJson["requests"].push_back(request);
 
-    // Запись обновленных данных обратно в файл config.json
+   
     std::ofstream outFileStream("requests.json");
     if (!outFileStream.is_open()) {
         throw JsonFileException("COULDN'T OPEN REQUEST FILE FOR WRITING!");

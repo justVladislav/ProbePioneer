@@ -89,12 +89,9 @@ std::vector<RelativeIndex> SearchServer::revelanceCalc(const std::vector<Relativ
 }
 
 
-std::vector<std::vector<RelativeIndex>>SearchServer::search( std::vector<std::string>& queries_input)
-{
-    ConverterJSON converter;
-    std::vector<std::vector<RelativeIndex>> result;
-    queries_input = converter.getRequests(); // When testing, there's no need to pass the result of the method call getRequests()
-    // to the variable queries_input,
+std::vector<std::vector<RelativeIndex>>SearchServer::search( std::vector<std::string>& queries_input){
+   
+    std::vector<std::vector<RelativeIndex>> result;   
 
 
     for ( int i = 0; i < queries_input.size(); ++i)
@@ -131,10 +128,10 @@ std::vector<std::vector<RelativeIndex>>SearchServer::search( std::vector<std::st
         std::sort(innerVector.begin(), innerVector.end(),
                   [this](const RelativeIndex& a, const RelativeIndex& b) {
                       if (a.rank == b.rank) {
-                          // Если значения равны, упорядочить по индексу
+                          
                           return a.docId < b.docId;
                       } else {
-                          // Иначе упорядочить по значению rank
+                          
                           return this->compareVectors(a, b);
                       }
                   });
