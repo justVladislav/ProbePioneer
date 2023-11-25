@@ -4,8 +4,6 @@
 #include "invertedIndex.h"
 
 //Tests passed successfully!
-//In case of testing, parameters should be added to the method of the tested class,
-// updateDocumentBase(), according to the testing class.
 void TestInvertedIndexFunctionality(
         const std::vector<std::string>& docs,
         const std::vector<std::string>& requests,
