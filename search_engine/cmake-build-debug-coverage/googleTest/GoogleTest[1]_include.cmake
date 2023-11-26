@@ -1,5 +1,0 @@
-if(EXISTS "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/googleTest/GoogleTest[1]_tests.cmake")
-  include("D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/googleTest/GoogleTest[1]_tests.cmake")
-else()
-  add_test(GoogleTest_NOT_BUILT GoogleTest_NOT_BUILT)
-endif()
