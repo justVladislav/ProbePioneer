@@ -13,6 +13,7 @@ FetchContent_MakeAvailable(json)
 
 add_subdirectory(sourceFiles)
 add_subdirectory(googleTest)
+add_subdirectory(nlohmann_json)
 
 target_link_libraries(SkillBoxSearchEngine PRIVATE nlohmann_json::nlohmann_json)
 
