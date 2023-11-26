@@ -108,6 +108,7 @@ Set your project's working directory.
 
 ### Building a Project via Terminal
 To build your project using the terminal, follow these steps:
+
 **1. Create a Build Directory:**
 Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build**
 
