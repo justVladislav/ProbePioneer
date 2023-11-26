@@ -91,6 +91,9 @@ To link the nlohmann_json library to your project, use the following command: **
 This command specifies that your project should link to the nlohmann_json library, allowing your project to utilize its functionalities.
 ![screenshot1.](images_Readme.md/Screenshot_7.png)
 
+
+
+### Building the Project
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
 2. To build the project using your compiler (Visual Studio or IDE CLion). If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp **#include <filesystem>** . And in the main function **std::filesystem::current_path("the path on your PC to the project search_engine Folder")**. See the screen below.
