@@ -85,8 +85,9 @@ The project includes the nlohmann/json library available in the project director
 1. Placement of nlohmann/json:
 The nlohmann/json library is already included within the project's folder structure. Or if you wish you can download it here https://github.com/nlohmann/json.
 2. CMake Integration:
-In your CMakeLists.txt file, include the library using add_subdirectory(nlohmann_json).
-Use find_package(nlohmann_json QUIET) to verify the availability of the library and link it to your project using target_link_libraries as shown below:
+In your CMakeLists.txt file, include the library using add_subdirectory(nlohmann_json). **This command tells CMake to include the nlohmann_json library as a subdirectory in your project.**
+To link the nlohmann_json library to your project, use the following command: **target_link_libraries(SkillBoxSearchEngine PRIVATE nlohmann_json::nlohmann_json)**
+This command specifies that your SkillBoxSearchEngine project should link to the nlohmann_json library, allowing your project to utilize its functionalities.
 ![screenshot1.](images_Readme.md/Screenshot_7.png)
 
 1. Download the repository as zip file on your Computer and unpack the zip File.
