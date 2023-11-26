@@ -56,6 +56,7 @@ void ProgramInterface::programFace( std::thread& t1,  std::thread& t2) {
         } else if (command == "search") {
             {
                 std::unique_lock<std::mutex> lock(results_mutex);
+                queries_input = converter->getRequests();
                 searchResult = server->search(queries_input);
                 queries_input.clear();
 
