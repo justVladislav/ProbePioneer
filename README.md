@@ -82,7 +82,7 @@ Each class encapsulates specific functionalities and is implemented across its r
     ```shell
     git clone https://github.com/justVladislav/ProbePioneer.git
     ```
-2. To build the project using your compiler (Visual Studio or IDE CLion), download the Project folder search_engine on your computer. If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp #include <filesystem>. And in the main function std::filesystem::current_path("the path on your PC to the project search_engine Folder"). See the screen below.
+2. To build the project using your compiler (Visual Studio or IDE CLion), download the Project folder search_engine on your computer. If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp #include <filesystem> . And in the main function std::filesystem::current_path("the path on your PC to the project search_engine Folder"). See the screen below.
 ![screenshot1.](images_Readme.md/Screenshot_1.png)
 
 In case you work on CLion, select the Option "Open Local folder" and choose search_engine. After building the project, Open the run configuration settings:
@@ -90,6 +90,8 @@ In the top right corner, select the run/debug configuration (for instance, next 
 In the opened window, select the run configuration (e.g., "Application"). Find the "Working directory" field.
 Set your project's working directory. 
 ![screenshot2.](images_Readme.md/Screenshot_2.png)
+
+### In Both Cases please delete content In cmake_build_debug folders!
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
@@ -99,7 +101,8 @@ When the program is launched, it displays the project name and notifies about pe
 ![screenshot6.](images_Readme.md/Screenshot_6.png)
 
 ### Google Test
-To run Google testing, simply choose the Google Test in run/debug configuration and execute. Before running the tests, please read the comments in invertedIndex.cpp within the method void InvertedIndex::updateDocumentBase, and in relativeIndex.cpp within the method std::vector<std::vector<RelativeIndex>>SearchServer::search. Also, pay attention to the comments in the checking classes within the googleTest folder. The test results are provided below:
+To run Google testing, simply choose the Google Test in run/debug configuration and execute.
+The test results are provided below:
 ![screenshot3.](images_Readme.md/Screenshot_3.png)
 ![screenshot4.](images_Readme.md/Screenshot_4.png)
 
