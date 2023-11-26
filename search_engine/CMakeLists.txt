@@ -6,11 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(MY_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/includes)
 
-include(FetchContent)
-
-FetchContent_Declare(json URL https://github.com/nlohmann/json/archive/refs/heads/develop.zip)
-FetchContent_MakeAvailable(json)
-
 add_subdirectory(sourceFiles)
 add_subdirectory(googleTest)
 add_subdirectory(nlohmann_json)
