@@ -48,8 +48,8 @@ std::vector<std::string> ConverterJSON::getTextDocuments()
         
     for (const auto& file : configJson["files"])
     {
-        
-        std::ifstream input(file);
+        std::string path = file;
+        std::ifstream input(path);
         if (input.is_open()) {
 
             std::string buffer;
