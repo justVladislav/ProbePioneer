@@ -78,8 +78,16 @@ Each class encapsulates specific functionalities and is implemented across its r
 
 ## Installation
 Make sure you have the following installed:
-CMake (version 3.25 or higher)
-C++ Compiler supporting C++17 standard
+- **CMake (version 3.25 or higher)**
+- **C++ Compiler supporting C++17 standard**
+### Installing Dependencies
+The project includes the nlohmann/json library available in the project directory. To ensure proper integration, follow these steps:
+Placement of nlohmann/json:
+The nlohmann/json library is already included within the project's folder structure. Or if you wish you can download it here https://github.com/nlohmann/json.
+CMake Integration:
+
+In your CMakeLists.txt file, include the library using add_subdirectory(nlohmann_json).
+Use find_package(nlohmann_json QUIET) to verify the availability of the library and link it to your project using target_link_libraries as shown below:
 
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
