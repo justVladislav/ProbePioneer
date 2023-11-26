@@ -77,7 +77,9 @@ The `ProgramInterface` class is instantiated and utilized within the `main` func
 Each class encapsulates specific functionalities and is implemented across its respective header and source files for better organization and modularity of the codebase.
 
 ## Installation
-### In Both Cases before building the Project, please delete content In cmake_build_debug folders and in out/build/debug Folder!
+Make sure you have the following installed:
+CMake (version 3.25 or higher)
+C++ Compiler supporting C++17 standard
 
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
