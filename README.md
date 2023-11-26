@@ -77,6 +77,7 @@ The `ProgramInterface` class is instantiated and utilized within the `main` func
 Each class encapsulates specific functionalities and is implemented across its respective header and source files for better organization and modularity of the codebase.
 
 ## Installation
+### In Both Cases before building the Project, please delete content In cmake_build_debug folders and in out/build/debug Folder!
 
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
@@ -88,8 +89,6 @@ In the top right corner, select the run/debug configuration (for instance, next 
 In the opened window, select the run configuration (e.g., "Application"). Find the "Working directory" field.
 Set your project's working directory. 
 ![screenshot2.](images_Readme.md/Screenshot_2.png)
-
-### In Both Cases before building the Project, please delete content In cmake_build_debug folders and in out/build/debug Folder!
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
