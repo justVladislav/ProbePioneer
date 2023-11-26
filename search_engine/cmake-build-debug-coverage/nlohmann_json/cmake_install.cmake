@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vlad_/CLionProjects/search_engine/nlohmann_json
+# Install script for directory: D:/Dev/ProbePioneer/search_engine/nlohmann_json
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

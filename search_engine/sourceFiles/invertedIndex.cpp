@@ -70,7 +70,7 @@ void InvertedIndex::updateDocumentBase(const std::vector<std::string>& inputDocs
 {
     
     std::vector<std::thread> threads;
-    docs = intpuDocs;
+    docs = inputDocs;
     for (size_t i = 0; i < docs.size(); ++i)
     {
         threads.emplace_back(&InvertedIndex::processDocument, this, i);

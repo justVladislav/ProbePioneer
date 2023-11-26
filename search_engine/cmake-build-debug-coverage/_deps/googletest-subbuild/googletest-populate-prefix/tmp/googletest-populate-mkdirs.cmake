@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-src"
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-build"
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix"
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-src"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-build"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

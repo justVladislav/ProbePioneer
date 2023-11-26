@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vlad_/CLionProjects/search_engine
+# Install script for directory: D:/Dev/ProbePioneer/search_engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/sourceFiles/cmake_install.cmake")
+  include("D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/sourceFiles/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/googleTest/cmake_install.cmake")
+  include("D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/googleTest/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/nlohmann_json/cmake_install.cmake")
+  include("D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/nlohmann_json/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/vlad_/CLionProjects/search_engine/cmake-build-debug-coverage/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Dev/ProbePioneer/search_engine/cmake-build-debug-coverage/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

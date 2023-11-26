@@ -1,0 +1,5 @@
+# ninja log v5
+7	525	7225814303708969	sourceFiles/CMakeFiles/SkillBoxSearchEngine.dir/main.cpp.obj	ce9f113c548a7031
+87	570	7225814304138817	sourceFiles/CMakeFiles/SkillBoxSearchEngine.dir/programInterface.cpp.obj	1d7947109a41d682
+47	594	7225814304388843	sourceFiles/CMakeFiles/SkillBoxSearchEngine.dir/invertedIndex.cpp.obj	d8126901303ac60b
+67	646	7225814304909263	sourceFiles/CMakeFiles/SkillBoxSearchEngine.dir/relativeIndex.cpp.obj	c219fe8f032c263e
