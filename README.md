@@ -91,7 +91,7 @@ In the opened window, select the run configuration (e.g., "Application"). Find t
 Set your project's working directory. 
 ![screenshot2.](images_Readme.md/Screenshot_2.png)
 
-### In Both Cases please delete content In cmake_build_debug folders!
+### In Both Cases before building the Project, please delete content In cmake_build_debug folders!
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
