@@ -81,7 +81,7 @@ Each class encapsulates specific functionalities and is implemented across its r
 
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
-2. To build the project using your compiler (Visual Studio or IDE CLion), download the Project folder search_engine on your computer. If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp #include <filesystem> . And in the main function std::filesystem::current_path("the path on your PC to the project search_engine Folder"). See the screen below.
+2. To build the project using your compiler (Visual Studio or IDE CLion). If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp #include <filesystem> . And in the main function std::filesystem::current_path("the path on your PC to the project search_engine Folder"). See the screen below.
 ![screenshot1.](images_Readme.md/Screenshot_1.png)
 
 In case you work on CLion, select the Option "Open Local folder" and choose search_engine. After building the project, Open the run configuration settings:
