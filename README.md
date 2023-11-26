@@ -22,8 +22,8 @@ The `ConverterJSON` class manages JSON file operations and data extraction requi
 - **addFileToConfig(const std::string& filePath):** Adds a file path to `config.json` for future document processing.
 - **addRequest(const std::string& request):** Adds a request to `requests.json` for subsequent search operations.
 
-### Usage in Main Function:
-The methods within the `ConverterJSON` class are utilized in various sections of the program's main functionality. These include reading documents, managing queries, handling search responses, and updating configuration files for future operations.
+### Usage:
+The methods within the `ConverterJSON` class are utilized in various sections of the program's functionality. These include reading documents, managing queries, handling search responses, and updating configuration files for future operations.
 
 InvertedIndex - invertedIndex.h.h and invertedIndex.h.cpp
 ## InvertedIndex Class functionalities:
@@ -35,7 +35,7 @@ The `InvertedIndex` class manages the creation and update of an inverted index s
 - **updateDocumentBase():** Updates the document base by retrieving text documents through the `ConverterJSON` class, processing each document in parallel using multiple threads, and updating the frequency dictionary accordingly.
 - **getWordCount(const std::string& word):** Retrieves word counts and document IDs associated with a specific word.
 - **getDictionary():** Retrieves the entire frequency dictionary containing words and their associated occurrences in documents.
-### Usage in Main Function:
+### Usage:
 The `InvertedIndex` class facilitates the creation and maintenance of an inverted index, offering methods to count word occurrences, process documents for indexing, update the index with document data, and retrieve word counts and associated document IDs. This class integrates with `ConverterJSON` to manage document retrieval and indexing operations.
 
 
@@ -52,7 +52,7 @@ The `SearchServer` class manages search functionalities and calculations for que
 - **revelanceCalc(const std::vector<RelativeIndex>& calculation):** Computes the relevance score for each document based on the frequency of query terms.
 - **search(std::vector<std::string>& queries_input):** Initiates the search process by processing input queries, determining document relevancy, and returning a vector of vectors containing `RelativeIndex` instances.
 
-### Usage in Main Function:
+### Usage:
 The `SearchServer` class orchestrates the search functionality of the system. It performs operations such as splitting queries, calculating word relevance, organizing search results based on relevancy, and presenting the final search outcomes.
 
 ProgramInterface - programInterface.h and programInterface.cpp
@@ -72,7 +72,7 @@ The `ProgramInterface` class serves as an interface for managing various operati
     - `search`: Initiates a search operation based on the existing queries.
     - `update`: Manually triggers an update to the document base.
     - `put`: Processes and stores search results for retrieval.
-### Usage
+### Usage in the Main Function:
 The `ProgramInterface` class is instantiated and utilized within the `main` function to initialize the program's interface and manage its functionalities. It initializes essential components and handles various operations such as file additions, query processing, search operations, and data updates, providing an interactive command-line interface for users to interact with the system.
 Each class encapsulates specific functionalities and is implemented across its respective header and source files for better organization and modularity of the codebase.
 
@@ -85,12 +85,13 @@ The project includes the nlohmann/json library available in the project director
 1. Placement of nlohmann/json:
 The nlohmann/json library is already included within the project's folder structure. Or if you wish you can download it here https://github.com/nlohmann/json.
 2. CMake Integration:
-In your CMakeLists.txt file, include the library using add_subdirectory(nlohmann_json). **This command tells CMake to include the nlohmann_json library as a subdirectory in your project.**
+In your CMakeLists.txt file, include the library using add_subdirectory(nlohmann_json):
+**This command tells CMake to include the nlohmann_json library as a subdirectory in your project.**
 
-To link the nlohmann_json library to your project, use the following command: **target_link_libraries(SkillBoxSearchEngine PRIVATE nlohmann_json::nlohmann_json)**
+To link the nlohmann_json library to your project, use the following command:
+**target_link_libraries(SkillBoxSearchEngine PRIVATE nlohmann_json::nlohmann_json)**
 This command specifies that your project should link to the nlohmann_json library, allowing your project to utilize its functionalities.
 ![screenshot1.](images_Readme.md/Screenshot_7.png)
-
 
 
 ### Building the Project
@@ -104,6 +105,20 @@ In the top right corner, select the run/debug configuration (for instance, next 
 In the opened window, select the run configuration (e.g., "Application"). Find the "Working directory" field.
 Set your project's working directory. 
 ![screenshot2.](images_Readme.md/Screenshot_2.png)
+
+### Building a Project via Terminal
+To build your project using the terminal, follow these steps:
+**1. Create a Build Directory:**
+Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build**
+
+**2. Move into the newly created build directory: cd build**
+
+**3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake <path_to_source>**
+
+**4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build**
+
+**5. If your project generates an executable, you can run it from the terminal using: ./your_executable_name**
+Replace your_executable_name with the name of the executable generated during the build process.
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
@@ -121,8 +136,6 @@ The test results are provided below:
 ## Project Structure
 - .idea: Configuration files related to the IDE setup.
 - answers.json: JSON file containing answers data.
-- cmake-build-debug: Directory for CMake build in debug mode.
-- cmake-build-debug-coverage: Directory for CMake build with coverage data.
 - CMakeLists.txt: CMake configuration file for the project.
 - config.json: JSON file containing configuration settings.
 - googleTest: Directory for Google Test framework.
