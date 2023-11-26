@@ -110,15 +110,15 @@ Set your project's working directory.
 To build your project using the terminal, follow these steps:
 
 **1. Create a Build Directory:**
-Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build**
+Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build.**
 
-**2. Move into the newly created build directory: cd build**
+**2. Move into the newly created build directory: cd build.**
 
-**3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake <path_to_source>**
+**3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake <path_to_source>.**
 
-**4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build**
+**4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build.**
 
-**5. If your project generates an executable, you can run it from the terminal using: ./your_executable_name**
+**5. If your project generates an executable, you can run it from the terminal using: ./your_executable_name.**
 Replace your_executable_name with the name of the executable generated during the build process.
 
 ## Usage
