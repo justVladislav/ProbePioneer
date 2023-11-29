@@ -44,14 +44,16 @@ void ProgramInterface::programFace( std::thread& t1,  std::thread& t2) {
 
         std::cin >> command;
         if (command == "addFile") {
+            std::cin.get();
             std::cout << "Please Enter the Path to the File(relative or absolute Path)\n";
             std::string path;
-            std::cin >> path;
+            std::getline(std::cin, path);
             converter->addFileToConfig(path);
         } else if (command == "addReq") {
+            std::cin.get();
             std::cout << "Please Enter the Request:\n";
             std::string request;
-            std::cin >> request;
+            std::getline(std::cin, request);
             converter->addRequest(request);
         } else if (command == "search") {
             {
