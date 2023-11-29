@@ -108,7 +108,8 @@ Or open a terminal or command prompt inside this folder(build directory).
 **3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake <path_to_source>.**
 Ex: cmake "C:\Users\vlad_\Desktop\ProbePioneer-main\search_engine\CMakeLists.txt".
 
-**4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build.**
+**4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build <path_to_build_directory_folder>.**
+Ex:  cmake --build C:\Users\vlad_\Desktop\search_engine
 
 **5. If your project generates an executable, you can run it from the terminal using: ./your_executable_name.**
 Replace your_executable_name with the name of the executable generated during the build process. You should run executable from its directory.
