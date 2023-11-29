@@ -82,8 +82,8 @@ Make sure you have the following installed:
 - **C++ Compiler supporting C++17 standard**
 ### Installing Dependencies
 **The dependency nlohmann_json is already included in the project libraries and does not require downloading its repository separately.**
-The add_subdirectory(nlohmann_json) command includes the existing nlohmann_json library into your project, assuming it's already part of your project's directory structure or defined in your project's CMakeLists. This command ensures that the required functionalities from nlohmann_json are available to your project.
-Then, target_link_libraries associates the nlohmann_json::nlohmann_json target with your SkillBoxSearchEngine target, enabling your project to utilize the functionalities provided by the nlohmann_json library seamlessly.
+The **add_subdirectory(nlohmann_json) command** includes the existing nlohmann_json library into your project, assuming it's already part of your project's directory structure or defined in your project's CMakeLists. 
+Then, **target_link_libraries associates the nlohmann_json::nlohmann_json** target with your SkillBoxSearchEngine target, enabling your project to utilize the functionalities provided by the nlohmann_json library seamlessly.
 This setup avoids the need to download the nlohmann_json repository separately, assuming the library is already available within your project's structure or dependencies.
 
 
