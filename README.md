@@ -100,15 +100,17 @@ To build your project using the terminal, follow these steps:
 
 **1. Create a Build Directory:**
 Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build.**
+Or you can create a build directory by creating a separate folder.
 
 **2. Move into the newly created build directory: cd build.**
+Or open a terminal or command prompt inside this folder(build directory).
 
 **3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake <path_to_source>.**
 
 **4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build.**
 
 **5. If your project generates an executable, you can run it from the terminal using: ./your_executable_name.**
-Replace your_executable_name with the name of the executable generated during the build process.
+Replace your_executable_name with the name of the executable generated during the build process. You should run executable from its directory.
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
