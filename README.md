@@ -111,9 +111,6 @@ Ex: cmake "C:\Users\vlad_\Desktop\ProbePioneer-main\search_engine\CMakeLists.txt
 **4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build <path_to_build_directory_folder>.**
 Ex:  cmake --build C:\Users\vlad_\Desktop\search_engine
 
-**5. If your project generates an executable, you can run it from the terminal using: ./your_executable_name.**
-Replace your_executable_name with the name of the executable generated during the build process. You should run executable from its directory.
-
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
 The main functions are launched at specific times in separate threads, which are set in config.json. Additionally, through the interface, you can manually execute necessary functions, such as adding queries or updating the document database.
