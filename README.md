@@ -97,14 +97,8 @@ This command specifies that your project should link to the nlohmann_json librar
 ### Building the Project
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
-2. To build the project using your compiler (Visual Studio or IDE CLion). If you work on VS, select the Option "Open Local folder" and choose search_engine. After building the project, add the following header to the main.cpp **#include <filesystem>** . And in the main function **std::filesystem::current_path("the path on your PC to the project search_engine Folder")**. See the screen below.
-![screenshot1.](images_Readme.md/Screenshot_1.png)
-
-In case you work on CLion, select the Option "Open Local folder" and choose search_engine. After building the project, Open the run configuration settings:
-In the top right corner, select the run/debug configuration (for instance, next to the run button). Choose "Edit Configurations..." to open the run configuration window.
-In the opened window, select the run configuration (e.g., "Application"). Find the "Working directory" field.
-Set your project's working directory. 
-![screenshot2.](images_Readme.md/Screenshot_2.png)
+2. To build the project using your compiler (Visual Studio or IDE CLion). If you work on VS, select the Option "Open Local folder" and choose search_engine. 
+In case you work on CLion, select the Option "Open Local folder" and choose search_engine. 
 
 ### Building a Project via Terminal
 To build your project using the terminal, follow these steps:
