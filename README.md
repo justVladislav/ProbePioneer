@@ -91,7 +91,9 @@ This setup avoids the need to download the nlohmann_json repository separately, 
 1. Download the repository as zip file on your Computer and unpack the zip File.
  
 2. To build the project using your compiler (Visual Studio or IDE CLion). If you work on VS, select the Option "Open Local folder" and choose search_engine. 
-In case you work on CLion, select the Option "Open Local folder" and choose search_engine. 
+In case you work on CLion, select the Option "Open Local folder" and choose search_engine.
+When using IDEs like Visual Studio or CLion with built-in CMake support, project building usually occurs automatically within the IDE. This is thanks to the integrated CMake support in these development tools.
+Upon opening a project with CMake in a supported IDE, it detects the CMakeLists.txt files and uses them to generate the project according to the configuration specified in these files. Then, the IDE automatically performs the configuration process (generating build files) and offers the ability to build and run the project inside the development environment without needing to use the command line or input commands manually. 
 
 ### Building a Project via Terminal
 To build your project using the terminal, follow these steps:
