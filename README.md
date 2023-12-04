@@ -100,16 +100,19 @@ To build your project using the terminal, follow these steps:
 
 **1. Create a Build Directory:**
 Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build.**
-Or you can create a build directory by creating a separate folder.
+This command creates a new folder. Or you can create a build directory by creating a separate folder using your OS functionalities.
 
-**2. Move into the newly created build directory: cd build.**
+**2. Move into the newly created build directory: cd <name_of_the_folder>.**
 Or open a terminal or command prompt inside this folder(build directory).
 
-**3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake <path_to_source>.**
+**3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake or cmake.exe <path_to_source>.**
+**Make sure that the path to the installed CMake is added to the PATH environment variable. This will allow your operating system to find the CMake executable file.**
 Ex: cmake "C:\Users\vlad_\Desktop\ProbePioneer-main\search_engine\CMakeLists.txt".
 
-**4. After running CMake, initiate the build process using a build tool (like make on Unix or msbuild on Windows). Use the following command: cmake --build <path_to_build_directory_folder>.**
+**4. Once CMake generates the build files, initiate the build process using a build tool (сmake --build or msbuild). Use the following command: cmake --build <path_to_build_directory_folder>.**
 Ex:  cmake --build C:\Users\vlad_\Desktop\search_engine
+
+**5. After building the project via the terminal, the executable file is created in a separate "Debug" folder located one directory below the configuration files. You need to move the executable file to the directory above, alongside the configuration files, using the move command
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
