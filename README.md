@@ -102,6 +102,7 @@ To build your project using the terminal, follow these steps:
 Open your terminal and navigate to the root directory of your project. Then, create a build directory using the following command: **mkdir build.**
 This command creates a new folder. Or you can create a build directory by creating a separate folder using your OS functionalities.
 ![terminal.](images_Readme.md/terminal.png)
+
 **2. Move into the newly created build directory: cd <name_of_the_folder>.**
 Or open a terminal or command prompt inside this folder(build directory).
 ![terminal_1.](images_Readme.md/terminal_1.png)
