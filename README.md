@@ -112,7 +112,11 @@ Ex: cmake "C:\Users\vlad_\Desktop\ProbePioneer-main\search_engine\CMakeLists.txt
 **4. Once CMake generates the build files, initiate the build process using a build tool (сmake --build or msbuild). Use the following command: cmake --build <path_to_build_directory_folder>.**
 Ex:  cmake --build C:\Users\vlad_\Desktop\search_engine
 
-**5. After building the project via the terminal, the executable file is created in a separate "Debug" folder located one directory below the configuration files. You need to move the executable file to the directory above, alongside the configuration files, using the move command
+5. After building the project via the terminal, move to folder with config files using the following command: **cd sourceFiles.**
+   
+6. The executable file is created in a separate "Debug" folder located one directory below the configuration files. You need to move the executable file to the directory above, alongside the configuration files, using the move command: **move<path_to_executable_file> <path_to_source_Files>.**
+   
+7. To run an executable file via the terminal, you need to use the command ./ followed by the name of the executable file: **./SkillBoxSearchEngine**
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
