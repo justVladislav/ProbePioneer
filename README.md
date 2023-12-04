@@ -104,19 +104,25 @@ This command creates a new folder. Or you can create a build directory by creati
 ![terminal.](images_Readme.md/terminal.png)
 **2. Move into the newly created build directory: cd <name_of_the_folder>.**
 Or open a terminal or command prompt inside this folder(build directory).
+![terminal_1.](images_Readme.md/terminal_1.png)
 
 **3. Once inside the build directory, execute CMake to generate the necessary build files. Replace <path_to_source> with the path to your project's source code: cmake or cmake.exe <path_to_source>.**
 **Make sure that the path to the installed CMake is added to the PATH environment variable. This will allow your operating system to find the CMake executable file.**
 Ex: cmake "C:\Users\vlad_\Desktop\ProbePioneer-main\search_engine\CMakeLists.txt".
+![terminal_2.](images_Readme.md/terminal_2.png)
+![terminal_3.](images_Readme.md/terminal_3.png)
 
 **4. Once CMake generates the build files, initiate the build process using a build tool (сmake --build or msbuild). Use the following command: cmake --build <path_to_build_directory_folder>.**
 Ex:  cmake --build C:\Users\vlad_\Desktop\search_engine
+![terminal_4.](images_Readme.md/terminal_4.png)
 
 **5. After building the project via the terminal, move to folder with config files using the following command: cd sourceFiles.**
    
 **6. The executable file is created in a separate "Debug" folder located one directory below the configuration files. You need to move the executable file to the directory above, alongside the configuration files, using the move command: move<path_to_executable_file> <path_to_source_Files>.**
+![terminal_5.](images_Readme.md/terminal_5.png)
    
 **7. To run an executable file via the terminal, you need to use the command ./ followed by the name of the executable file: ./SkillBoxSearchEngine**
+![terminal_6.](images_Readme.md/terminal_6.png)
 
 ## Usage
 To run the program, simply choose SkillBoxSearchEngine in run/debug configuration and execute. The interface is quite simple, and you can find all the information in the description.
