@@ -23,6 +23,7 @@ int InvertedIndex::count(const std::vector<std::string>& vec, const std::string&
 
 void InvertedIndex::processDocument(const size_t& docId)
 {
+    std::lock_guard<std::mutex> lock(mtx);
     std::vector<std::string> words;
     std::map<std::string, std::vector<Entry>> tempDict;
 
@@ -36,8 +37,7 @@ void InvertedIndex::processDocument(const size_t& docId)
         words.push_back(word);
     }
 
-    std::lock_guard<std::mutex> lock(mtx);
-
+    
     while (!words.empty())
     {
         c = count(words, words[0]);
