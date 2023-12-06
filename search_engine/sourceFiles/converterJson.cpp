@@ -191,7 +191,14 @@ void ConverterJSON::putAnswers(std::vector<std::vector<std::pair<size_t, double>
                 answer["relevance"] = relevanceArray;        
             
         }
-        answersJson["request00" + std::to_string(i + 1)] = answer;
+         if (i > 8)
+         {
+             answersJson["request0" + std::to_string(i + 1)] = answer;
+         }
+         else
+         {
+             answersJson["request00" + std::to_string(i + 1)] = answer;
+         }
     }
 
     std::ofstream answers_file("answers.json");
