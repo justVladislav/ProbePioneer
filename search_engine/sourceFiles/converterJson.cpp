@@ -188,16 +188,8 @@ void ConverterJSON::putAnswers(std::vector<std::vector<std::pair<size_t, double>
                     relevanceEntry["rank"] = answers[i][j].second;
                     relevanceArray.push_back(relevanceEntry);
                 }
-                answer["relevance"] = relevanceArray;           
-            else {
-
-                for (const auto& rev : answers[i]) {
-                    nlohmann::json relevanceEntry;
-                    relevanceEntry["docId"] = rev.first;
-                    relevanceEntry["rank"] = rev.second;
-                    answer["relevance"].push_back(relevanceEntry);
-                }
-            }
+                answer["relevance"] = relevanceArray;        
+            
         }
         answersJson["request00" + std::to_string(i + 1)] = answer;
     }
