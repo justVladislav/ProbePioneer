@@ -14,7 +14,14 @@ std::atomic<bool> terminate_threads(false);
 void ProgramInterface::runUpdateDocsThread() {
 
     while (!terminate_threads) {
-        invIndex->updateDocumentBase(converter->getTextDocuments());
+        try
+        {
+            invIndex->updateDocumentBase(converter->getTextDocuments());
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << std::endl;
+        }
         int time = converter->getUpdateTime();
         std::this_thread::sleep_for(std::chrono::minutes (time));
     }
@@ -58,21 +65,45 @@ void ProgramInterface::programFace( std::thread& t1,  std::thread& t2) {
         } else if (command == "search") {
             {
                 std::unique_lock<std::mutex> lock(results_mutex);
-                queries_input = converter->getRequests();
-                searchResult = server->search(queries_input);
-                queries_input.clear();
+                try
+                {
+                    queries_input = converter->getRequests();
+                    searchResult = server->search(queries_input);
+                    queries_input.clear();
+                }
+                catch (const std::exception& e)
+                {
+                    std::cerr << e.what() << std::endl;
+                }               
 
             }
 
         } else if (command == "update") {
-            invIndex->updateDocumentBase(converter->getTextDocuments());
+            try
+            {
+                invIndex->updateDocumentBase(converter->getTextDocuments());
+            }
+            catch (const std::exception& e)
+            {
+                std::cerr << e.what() << std::endl;
+            }
+            
 
         } else if (command == "put") {
+
             std::unique_lock<std::mutex> lock(results_mutex);
-            converterResult = converter->convertToPairVector(searchResult);
-            converter->putAnswers(converterResult);
-            converterResult.clear();
-            searchResult.clear();
+            try
+            {
+                converterResult = converter->convertToPairVector(searchResult);
+                converter->putAnswers(converterResult);
+                converterResult.clear();
+                searchResult.clear();
+            }
+            catch (const std::exception& e)
+            {
+                std::cerr << e.what() << std::endl;
+            }
+            
         }
     }
 
