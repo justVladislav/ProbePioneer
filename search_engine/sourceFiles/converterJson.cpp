@@ -175,8 +175,7 @@ void ConverterJSON::putAnswers(std::vector<std::vector<std::pair<size_t, double>
         }
         else {
             answer["result"] = "true";
-
-            if (answers[i].size() > 1) {
+            
                 nlohmann::json relevanceArray;
 
                 for (int j = 0; j < answers[i].size(); ++j) {
@@ -189,9 +188,7 @@ void ConverterJSON::putAnswers(std::vector<std::vector<std::pair<size_t, double>
                     relevanceEntry["rank"] = answers[i][j].second;
                     relevanceArray.push_back(relevanceEntry);
                 }
-
-                answer["relevance"] = relevanceArray;
-            }
+                answer["relevance"] = relevanceArray;           
             else {
 
                 for (const auto& rev : answers[i]) {
