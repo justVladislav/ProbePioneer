@@ -2,19 +2,19 @@
 A local file search engine.
 
 This project is a local search engine written in C++. 
-- **Web application for search: A web application with a search engine helps users find specific content within the site or platform by indexing files and providing relevant results.
+- Web application for search: A web application with a search engine helps users find specific content within the site or platform by indexing files and providing relevant results.
 
-- **CMS integration: A search engine integrated into a content management system (CMS) automates content indexing and helps users find information through the system's interface.
+- CMS integration: A search engine integrated into a content management system (CMS) automates content indexing and helps users find information through the system's interface.
 
-- **Search engine for local document storage: This search engine is designed for finding documents stored on local servers or personal computers, improving data access and management.
+- Search engine for local document storage: This search engine is designed for finding documents stored on local servers or personal computers, improving data access and management.
 
-- **Intelligent information retrieval agent: Automates the process of searching and processing information using a search engine, updating databases and handling user queries without human intervention.
+- Intelligent information retrieval agent: Automates the process of searching and processing information using a search engine, updating databases and handling user queries without human intervention.
 
-- **Analytics and reporting: The search engine is used to analyze large volumes of text data, creating reports and providing insights that help make informed decisions.
+- Analytics and reporting: The search engine is used to analyze large volumes of text data, creating reports and providing insights that help make informed decisions.
 
-- **Recommendation system: Generates personalized recommendations based on user queries and behavior, enhancing their interaction with the content.
+- Recommendation system: Generates personalized recommendations based on user queries and behavior, enhancing their interaction with the content.
 
-- **Social media monitoring and analysis: The search engine helps analyze data from social media, tracking discussions, trends, and opinions, which is important for reputation monitoring and trend analysis.
+- Social media monitoring and analysis: The search engine helps analyze data from social media, tracking discussions, trends, and opinions, which is important for reputation monitoring and trend analysis.
 
 ## Description
 
